@@ -1,0 +1,29 @@
+nav {
+  padding: 15px;
+  background-color: var(--secondary-color);
+  color: #ddd;
+  border: 1px solid var(--tertiary-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+  color: white;
+}
+
+.active,
+.nav-item:hover {
+  color: #ccdcc3;
+  /* color: #b1caa4; */
+  transform: translateY(-2px);
+  transition: 0.4s;
+}
