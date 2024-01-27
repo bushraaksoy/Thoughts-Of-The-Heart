@@ -1,8 +1,10 @@
 nav {
   padding: 15px;
-  background-color: var(--secondary-color);
+  background-color: #95a69a;
+  /* background: linear-gradient(to top, #95a69a, #eee); */
   color: #ddd;
-  border: 1px solid var(--tertiary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  border-top: 1px solid var(--secondary-color);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -10,10 +12,11 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 30px;
+  gap: 35px;
   font-size: 15px;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
 }
 
 .nav-item {
@@ -22,7 +25,7 @@ nav ul {
 
 .active,
 .nav-item:hover {
-  color: #ccdcc3;
+  color: var(--tertiary-color);
   /* color: #b1caa4; */
   transform: translateY(-2px);
   transition: 0.4s;

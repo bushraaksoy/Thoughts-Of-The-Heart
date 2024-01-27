@@ -2,7 +2,8 @@ import './Blog.css';
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useParams } from 'react-router-dom';
-import { getBlogContent } from '../../utils';
+import readingDuration from 'reading-duration'
+import matter from 'gray-matter';
 
 const Blog = () => {
     const { blogName } = useParams();
@@ -20,19 +21,25 @@ const Blog = () => {
         fetchData();
     }, [blogName])
 
-    const result = getBlogContent(content);
-    console.log("content", content)
+    const result = matter(content);
     console.log("result", result)
+    const readingTime = readingDuration(content, { emoji: 'clock' })
 
     return (
         <article className='blog-article'>
-            <h1>{result.data.name}</h1>
-            <p>{result.data.publishDate}</p>
-            <img src={result.data.image} alt={result.data.name} width={100} height={100} />
-            <ReactMarkdown>
+            <div className='blog-heading'>
+                <h1 className='blog-title'>{result.data.name}</h1>
+                <div className='blog-date-time'>
+                    <span >{result.data.publishDate}</span>
+                    <span >{readingTime}</span>
+                </div>
+            </div>
+
+            <ReactMarkdown className='blog-content'>
                 {result.content}
             </ReactMarkdown>
         </article>
+
     )
 };
 

@@ -1,34 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sail&display=swap");
 @import url(reset.css);
 
 :root {
   --primary-color: #78866b;
   --secondary-color: #738276;
   --tertiary-color: #4d5d53;
+  --dark: #3a463f;
+  --light: #c8d4cb;
+  --text-color: #000;
+  --background-color: #eee;
 }
 /* #8f9779 */
 /* #738678 */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #2f303a;
-    --background-color: #ddd;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --text-color: #070707;
-    --background-color: #ddd;
-  }
-}
+/* #e6f0e7	(230,240,231)
+#cbdbcd	(203,219,205)
+#c0d4c3	(192,212,195)
+#b6ceb8	(182,206,184)
+#abc5ae */
 
 body {
   color: var(--text-color);
   background-color: var(--background-color);
-  /* font-family: "Quicksand", sans-serif; */
   font-family: "Raleway", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+pre {
+  font-size: 15px;
+  padding: 13px;
+  background-color: rgba(68, 68, 68, 0.8);
+  font-family: monospace;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+}
+
+/* .language-ar {
+  background-color: var(--light);
+  text-align: justify;
+  direction: rtl;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 10px;
+} */
