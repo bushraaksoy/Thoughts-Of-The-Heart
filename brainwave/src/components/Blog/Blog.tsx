@@ -30,7 +30,7 @@ const Blog = () => {
             <div className='blog-heading'>
                 <h1 className='blog-title'>{result.data.name}</h1>
                 <div className='blog-date-time'>
-                    <span >{result.data.publishDate}</span>
+                    <span >🗓 {result.data.publishDate}</span>
                     <span >{readingTime}</span>
                 </div>
             </div>

@@ -1,0 +1,8 @@
+.intro {
+  font-size: 80px;
+  font-weight: 700;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: var(--light);
+  width: 100%;
+}

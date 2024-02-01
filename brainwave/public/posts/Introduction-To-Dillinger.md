@@ -1,6 +1,6 @@
 ---
     name: "Introduction To Dillinger"
-    publishDate: "🗓 2024-01-25"
+    publishDate: "2024-01-25"
     image: "https://static.vecteezy.com/system/resources/thumbnails/025/284/015/small_2xclose-up-growing-beautiful-forest-in-glass-ball-and-flying-butterflies-in-nature-outdoors-spring-season-concept-generative-ai-photo.jpg"
 ---
 
